@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
+import { useTheme } from '../../hooks/useTheme'
 import AppHeader from '../layouts/AppHeader'
 import ContractorBottomNav from '../layouts/ContractorBottomNav'
 import ProtectedRoute from './ProtectedRoute'
@@ -22,6 +23,7 @@ import WorkerChart from '../pages/worker/WorkerChart'
 
 function AppRoutes() {
   const { pathname } = useLocation()
+  useTheme()
   const showContractorNav = pathname.startsWith('/contractor')
   const [installPrompt, setInstallPrompt] = useState(null)
 

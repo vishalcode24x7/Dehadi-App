@@ -1,6 +1,7 @@
 {
   "app": {
     "name": "हिसाब किताब",
+    "back": "वापस जाएँ",
     "logout": "लॉगआउट"
   },
   "pwa": {
@@ -8,6 +9,11 @@
   },
   "settings": {
     "title": "सेटिंग्स",
+    "languageTitle": "भाषा",
+    "themeTitle": "दिखावट",
+    "themeDark": "डार्क थीम चालू करें",
+    "themeLight": "लाइट थीम चालू करें",
+    "accountTitle": "खाता",
     "installTitle": "हिसाब किताब इंस्टॉल करें",
     "installButton": "ऐप इंस्टॉल करें",
     "installUnavailable": "इस ब्राउज़र में अभी ऐप इंस्टॉल करने का विकल्प उपलब्ध नहीं है।"

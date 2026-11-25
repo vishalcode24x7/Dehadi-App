@@ -108,7 +108,7 @@ frontend/
 │  │  ├─ attendance.store.js
 │  │  ├─ payments.store.js
 │  │  ├─ khoraki.store.js
-│  │  └─ ui.store.js        # language, toasts
+│  │  └─ ui.store.js        # language, theme, toasts
 │  ├─ hooks/
 │  │  ├─ useAuth.js
 │  │  ├─ useWorkers.js
@@ -292,6 +292,7 @@ Naya endpoint banana ho to pehle is table me add karo.
 
 ### Common
 - **AppHeader**: app naam (left), **Language toggle HI/EN (right, hamesha visible)**, logout menu.
+- **Settings**: language toggle, logout, light/dark theme (`hk_theme` me persist), aur available hone par PWA install option.
 
 ### Contractor (bottom navigation)
 1. **Dashboard**: aaj kitne present, aaj ka total khoraki, total baaki balance, quick buttons.

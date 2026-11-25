@@ -1,6 +1,7 @@
 {
   "app": {
     "name": "Hisab Kitab",
+    "back": "Go back",
     "logout": "Logout"
   },
   "pwa": {
@@ -8,6 +9,11 @@
   },
   "settings": {
     "title": "Settings",
+    "languageTitle": "Language",
+    "themeTitle": "Appearance",
+    "themeDark": "Switch to dark theme",
+    "themeLight": "Switch to light theme",
+    "accountTitle": "Account",
     "installTitle": "Install Hisab Kitab",
     "installButton": "Install App",
     "installUnavailable": "App installation is not available in this browser right now."
