@@ -3,6 +3,15 @@
     "name": "हिसाब किताब",
     "logout": "लॉगआउट"
   },
+  "pwa": {
+    "offline": "Internet nahi hai"
+  },
+  "settings": {
+    "title": "सेटिंग्स",
+    "installTitle": "हिसाब किताब इंस्टॉल करें",
+    "installButton": "ऐप इंस्टॉल करें",
+    "installUnavailable": "इस ब्राउज़र में अभी ऐप इंस्टॉल करने का विकल्प उपलब्ध नहीं है।"
+  },
   "language": {
     "hindi": "हिंदी",
     "english": "अंग्रेज़ी"

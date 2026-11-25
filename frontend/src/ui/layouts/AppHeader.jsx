@@ -53,13 +53,41 @@ function AppHeader() {
           {`${t('language.hindi')} ⇄ ${t('language.english')}`}
         </button>
         {isAuthenticated && (
-          <button
-            type="button"
-            onClick={logout}
-            className="min-h-11 whitespace-nowrap rounded-lg border border-slate-300 px-2 text-xs"
-          >
-            {t('app.logout')}
-          </button>
+          <>
+            <button
+              type="button"
+              onClick={() => navigate('/settings')}
+              aria-label={t('settings.title')}
+              className="grid min-h-11 min-w-11 place-items-center rounded-lg border border-slate-300"
+            >
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                className="h-5 w-5"
+              >
+                <path
+                  d="M12 8.75a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5Z"
+                  stroke="currentColor"
+                  strokeWidth="1.7"
+                />
+                <path
+                  d="m19.4 15 .1.1a1.8 1.8 0 1 1-2.55 2.55l-.1-.1a1.8 1.8 0 0 0-3.05 1.27v.28a1.8 1.8 0 1 1-3.6 0v-.15a1.8 1.8 0 0 0-3.07-1.27l-.1.1a1.8 1.8 0 1 1-2.55-2.55l.1-.1a1.8 1.8 0 0 0-1.27-3.05h-.28a1.8 1.8 0 1 1 0-3.6h.15a1.8 1.8 0 0 0 1.27-3.07l-.1-.1A1.8 1.8 0 1 1 6.9 2.63l.1.1a1.8 1.8 0 0 0 3.05-1.27v-.28a1.8 1.8 0 1 1 3.6 0v.15a1.8 1.8 0 0 0 3.07 1.27l.1-.1a1.8 1.8 0 1 1 2.55 2.55l-.1.1a1.8 1.8 0 0 0 1.27 3.05h.28a1.8 1.8 0 1 1 0 3.6h-.15A1.8 1.8 0 0 0 19.4 15Z"
+                  transform="translate(1 1) scale(.92)"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
+            <button
+              type="button"
+              onClick={logout}
+              className="min-h-11 whitespace-nowrap rounded-lg border border-slate-300 px-2 text-xs"
+            >
+              {t('app.logout')}
+            </button>
+          </>
         )}
       </div>
     </header>

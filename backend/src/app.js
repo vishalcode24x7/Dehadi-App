@@ -17,7 +17,7 @@ const app = express()
 app.use(helmet())
 app.use(
   cors({
-    origin: env.clientOrigin,
+    origin: env.clientOrigins,
   }),
 )
 app.use(express.json({ limit: '1mb' }))

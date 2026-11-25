@@ -3,6 +3,15 @@
     "name": "Hisab Kitab",
     "logout": "Logout"
   },
+  "pwa": {
+    "offline": "No internet connection"
+  },
+  "settings": {
+    "title": "Settings",
+    "installTitle": "Install Hisab Kitab",
+    "installButton": "Install App",
+    "installUnavailable": "App installation is not available in this browser right now."
+  },
   "language": {
     "hindi": "HI",
     "english": "EN"
