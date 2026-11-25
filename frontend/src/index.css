@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background: #f8fafc;
+  }
+
+  body {
+    min-width: 320px;
+    background: #f8fafc;
+    color: #0f172a;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
