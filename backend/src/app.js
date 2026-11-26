@@ -17,12 +17,13 @@ const app = express()
 app.use(helmet())
 app.use(
   cors({
-    origin: env.clientOrigins,
+    origin: clientOrigins,
+    credentials: true
   }),
 )
 app.use(express.json({ limit: '1mb' }))
 
-app.use(express.static('./public'))
+app.use(express.static("./public"))
 
 app.use('/api/auth', authRoutes)
 app.use('/api/workers', workersRoutes)
