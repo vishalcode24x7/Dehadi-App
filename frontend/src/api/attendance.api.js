@@ -11,3 +11,4 @@ export async function upsertAttendance(input) {
   const response = await axiosClient.put('/attendance', input)
   return { data: response.data.data }
 }
+ 
